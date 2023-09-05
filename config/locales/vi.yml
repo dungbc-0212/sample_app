@@ -1,0 +1,15 @@
+vi:
+  layouts:
+    header_logo: "Ứng dụng mẫu"
+    header_home: "Trang chủ"
+    header_help: "Hỗ trợ"
+    header_login: "Đăng nhập"
+  static_pages:
+    title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
+    help:
+      title: "Hỗ trợ"
+      description_html: "Tìm kiếm hỗ trợ với Ruby on Rails Tutorial tại <a href='http://www.railstutorial.org/help'>Rails Tutorialhelp page</a>. Để tìm trợ giúp cho ứng dụng mẫu này <a href='http://www.railstutorial.org/book'><em>Ruby on RailsTutorial</em>book</a>."
+    home:
+      h1: "Ứng dụng mẫu"
+      title: "Trang chủ"
+      description_html: "Đây là trang chủ cho ứng dụng mẫu <a href='http://www.railstutorial.org/'>Ruby onRails Tutorial</a>"
