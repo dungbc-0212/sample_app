@@ -13,3 +13,21 @@ vi:
       h1: "Ứng dụng mẫu"
       title: "Trang chủ"
       description_html: "Đây là trang chủ cho ứng dụng mẫu <a href='http://www.railstutorial.org/'>Ruby onRails Tutorial</a>"
+  activerecord:
+    models:
+      user: "Người dùng"
+  attributes:
+    user:
+      name: "Tên"
+      email: "Email"
+      password: "Mật Khẩu"
+  users:
+    new:
+      sign_up: "Đăng ký"
+      create_my_account: "Tạo tài khoản"
+      name: "Tên"
+      email: "Email"
+      password: "Mật khẩu"
+      confirmation: "Xác nhận mật khẩu"
+    create:
+      welcome_to_the_sample_app: "Chào mừng đến với ứng dụng mẫu"

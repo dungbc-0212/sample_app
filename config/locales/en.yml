@@ -12,3 +12,9 @@ en:
     home:
       title: "Home"
       description_html: "This is the home page for the <a href='http://www.railstutorial.org/'>Ruby onRails Tutorial</a> sample application."
+  users:
+    new:
+      sign_up: "Sign up"
+      create_my_account: "Create my account"
+    create:
+      welcome_to_the_sample_app: "Welcome to the sample app"
