@@ -4,6 +4,11 @@ vi:
     header_home: "Trang chủ"
     header_help: "Hỗ trợ"
     header_login: "Đăng nhập"
+    header_users: "Người dùng"
+    header_account: "Tài khoản"
+    header_profile: "Trang cá nhân"
+    header_setting: "Cài đặt"
+    header_logout: "Đăng xuất"
   static_pages:
     title: "Ứng dụng mẫu hướng dẫn Ruby on Rails"
     help:
@@ -31,3 +36,8 @@ vi:
       confirmation: "Xác nhận mật khẩu"
     create:
       welcome_to_the_sample_app: "Chào mừng đến với ứng dụng mẫu"
+  login:
+    title: "Đăng nhập"
+    password: "Mật khẩu"
+    new_user?: "Người dùng mới?"
+    sign_up_now!: "Đăng ký ngay"
