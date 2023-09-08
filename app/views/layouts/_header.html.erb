@@ -1,12 +1,28 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container">
-        <%= link_to t("layouts.header_logo"), "#", id: "logo" %>
-        <nav>
-            <ul class="nav navbar-nav navbar-right">
-                <li><%= link_to t("layouts.header_home"), "#" %></li>
-                <li><%= link_to t("layouts.header_help"), "#" %></li>
-                <li><%= link_to t("layouts.header_login"), "#" %></li>
+  <div class="container">
+    <%= link_to t("layouts.header_logo"), "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t("layouts.header_home"), "#" %></li>
+        <li><%= link_to t("layouts.header_help"), "#" %></li>
+        <% if logged_in? %>
+          <li><%= link_to t("layouts.header_users"), "#" %></li>
+          <li class="dropdown">
+            <a href="#" id="account" class="dropdown-toggle">
+              <%= t "layouts.header_account" %>
+              <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to t("layouts.header_profile"), current_user %></li>
+              <li><%= link_to t("layouts.header_setting"), '#' %></li>
+              <li class="divider"></li>
+              <li> <%= link_to t("layouts.header_logout"), logout_path, method: :delete %></li>
             </ul>
-        </nav>
-    </div>
+          </li>
+        <% else %>
+          <li><%= link_to t("layouts.header_login"), login_path %></li>
+        <% end %>
+      </ul>
+    </nav>
+  </div>
 </header>

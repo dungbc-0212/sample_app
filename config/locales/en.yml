@@ -4,6 +4,11 @@ en:
     header_home: "Home"
     header_help: "Help"
     header_login: "Login"
+    header_users: "Users"
+    header_account: "Account"
+    header_profile: "Profile"
+    header_setting: "Setting"
+    header_logout: "Log out"
   static_pages:
     title: "Ruby on Rails Tutorial Sample App"
     help:
@@ -16,5 +21,14 @@ en:
     new:
       sign_up: "Sign up"
       create_my_account: "Create my account"
+      name: "Name"
+      email: "Email"
+      password: "Password"
+      confirmation: "Confirmation"
     create:
       welcome_to_the_sample_app: "Welcome to the sample app"
+  login:
+    title: "Log in"
+    password: "Password"
+    new_user?: "New user?"
+    sign_up_now!: "Sign up now"
