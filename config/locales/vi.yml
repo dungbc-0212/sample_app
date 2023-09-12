@@ -41,3 +41,4 @@ vi:
     password: "Mật khẩu"
     new_user?: "Người dùng mới?"
     sign_up_now!: "Đăng ký ngay"
+    remember: "Ghi nhớ tôi trên máy tính này"
