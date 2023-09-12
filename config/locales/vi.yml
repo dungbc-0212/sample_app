@@ -34,11 +34,32 @@ vi:
       email: "Email"
       password: "Mật khẩu"
       confirmation: "Xác nhận mật khẩu"
+      button_text: "Tạo tài khoản"
     create:
       welcome_to_the_sample_app: "Chào mừng đến với ứng dụng mẫu"
+    edit:
+      title: "Chỉnh sửa thông tin người dùng"
+      edit_title: "Cập nhật thông tin của bạn"
+      button_text: "Lưu thay đổi"
+      confirm_text: "Bạn có chắc không?"
+      change: "thay đổi"
+      delete: "xóa"
+    index:
+      all_users: "Tất cả người dùng"
   login:
     title: "Đăng nhập"
     password: "Mật khẩu"
     new_user?: "Người dùng mới?"
     sign_up_now!: "Đăng ký ngay"
     remember: "Ghi nhớ tôi trên máy tính này"
+  form:
+    name: "Tên"
+    password: "Mật khẩu"
+    confirmation: "Xác nhận lại"
+    not_found_user: "Not found user!"
+  profile_updated: "Thông tin đã được cập nhật"
+  user_deleted: "Đã xóa người dùng"
+  delete_fail: "Xóa thất bại"
+  user_not_found: "Không tìm thấy người dùng!"
+  please_log_in: "Xin hãy đăng nhập."
+  cannot_edit_account: "Bạn không thể chỉnh sửa tài khoản này."
