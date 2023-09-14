@@ -25,11 +25,32 @@ en:
       email: "Email"
       password: "Password"
       confirmation: "Confirmation"
+      button_text: "Create my account"
     create:
       welcome_to_the_sample_app: "Welcome to the sample app"
+    edit:
+      title: "Edit user"
+      edit_title: "Update your profile"
+      button_text: "Save changes"
+      confirm_text: "You sure?"
+      change: "change"
+      delete: "delete"
+    index:
+      all_users: "All Users"
   login:
     title: "Log in"
     password: "Password"
     new_user?: "New user?"
     sign_up_now!: "Sign up now"
     remember: "Remember me on this computer"
+  form:
+    name: "Name"
+    password: "Password"
+    confirmation: "Confirmation"
+  not_found_user: "Not found user!"
+  profile_updated: "Profile updated"
+  user_deleted: "User deleted"
+  delete_fail: "Delete fail!"
+  user_not_found: "User not found!"
+  please_log_in: "Please log in."
+  cannot_edit_account: "You cannot edit this account."
