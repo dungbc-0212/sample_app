@@ -4,13 +4,7 @@ class UsersController < ApplicationController
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
-  def show
-    @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:warning] = t "not_found_user"
-    redirect_to root_url
-  end
+  def show; end
 
   def index
     @pagy, @users = pagy(User.all, items: Settings.page_10)
@@ -24,9 +18,13 @@ class UsersController < ApplicationController
     @user = User.new user_params # Not the final implementation!
     if @user.save
       # Handle a successful save.
-      log_in @user
-      flash[:success] = t ".welcome_to_the_sample_app!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "mail.check_email"
+      redirect_to root_url
+
+      # log_in @user
+      # flash[:success] = t ".welcome_to_the_sample_app!"
+      # redirect_to @user
     else
       render :new
     end
