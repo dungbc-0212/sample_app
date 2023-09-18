@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
   scope "(:locale)", locale: /en|vi/ do
     get "static_pages/home"
     get "static_pages/help"
@@ -12,6 +9,7 @@ Rails.application.routes.draw do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
+    resources :password_resets, only: %i(new create edit update)
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   root "static_pages#home"
