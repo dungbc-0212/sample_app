@@ -79,7 +79,7 @@ vi:
     password_reset_text_1: "Để đặt lại mật khẩu hãy nhấn vào đường dẫn bên dưới"
     password_reset_text_2: "Dường dẫn này sẽ hết hạn sau 2 giờ.%{br}Nếu bạn không yêu cầu đặt lại mật khẩu, xin hay bỏ qua tin nhắn này và mật khẩu của bạn sẽ giữ nguyên"
   microposts:
-    micropost: "Bài đăng"
+    micropost: "Bài đăng%{colon}"
     created: "Đã tạo bài đăng"
     deleted: "Đã xóa bài đăng"
     invalid: "Bài đăng không hợp lệ"
@@ -88,6 +88,11 @@ vi:
     feed: "Bảng tin"
     count: "Bài đăng (%{count})"
     timestamp: "Đăng %{time} trước"
+  relationships:
+    following: "Đang theo dõi"
+    followers: "Người theo dõi"
+    follow: "Theo dõi"
+    unfollow: "Bỏ theo dõi"
   view_my_profile: "Xem trang cá nhân"
   image_format: "phải lạ dạng ảnh hợp lệ"
   image_load: "nên nhỏ hơn 5MB"

@@ -1,5 +1,11 @@
 class User < ApplicationRecord
   has_many :microposts, dependent: :destroy
+  has_many :active_relationships, class_name: Relationship.name,
+foreign_key: :follower_id, dependent: :destroy
+  has_many :passive_relationships, class_name: Relationship.name,
+foreign_key: :followed_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+  has_many :followers, through: :passive_relationships, source: :follower
   attr_accessor :remember_token, :activation_token, :reset_token
 
   before_save :downcase_email
@@ -69,7 +75,22 @@ format: {with: VALID_EMAIL_REGEX}
   end
 
   def feed
-    microposts
+    Micropost.relate_post(following_ids << id)
+  end
+
+  def follow other_user
+    # Follows a user.
+    following << other_user
+  end
+
+  def unfollow other_user
+    # Unfollows a user.
+    following.delete other_user
+  end
+
+  def following? other_user
+    # Returns if the current user is following the other_user or not
+    following.include? other_user
   end
 
   private
