@@ -11,6 +11,12 @@ Rails.application.routes.draw do
     delete "/logout", to: "sessions#destroy"
     resources :password_resets, only: %i(new create edit update)
     resources :microposts, only: %i(create destroy)
+    resources :users do
+      member do
+        get :following, :followers
+      end
+    end
+    resources :relationships, only: %i(create destroy)
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   root "static_pages#home"
